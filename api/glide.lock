@@ -1,0 +1,36 @@
+hash: 2b65dd00bb554b7d6ce50c413f8ddb7c5080d322b33305a18a09f39878808b25
+updated: 2018-10-05T06:39:35.367711+01:00
+imports:
+- name: github.com/aws/aws-sdk-go
+  version: c7cd1ebe87257cde9b65112fc876b0339ea0ac30
+- name: github.com/dgrijalva/jwt-go
+  version: 06ea1031745cb8b3dab3f6a236daf2b0aa468b7e
+- name: github.com/labstack/echo
+  version: 1049c9613cd371b7ea8f219404c9a821734781ed
+  subpackages:
+  - middleware
+- name: github.com/labstack/gommon
+  version: 0a22a0df01a7c84944c607e8a6e91cfe421ea7ed
+  subpackages:
+  - bytes
+  - color
+  - log
+  - random
+- name: github.com/mattn/go-colorable
+  version: efa589957cd060542a26d2dd7832fd6a6c6c3ade
+- name: github.com/mattn/go-isatty
+  version: 6ca4dbf54d38eea1a992b3c722a76a5d1c4cb25c
+- name: github.com/valyala/bytebufferpool
+  version: e746df99fe4a3986f4d4f79e13c1e0117ce9c2f7
+- name: github.com/valyala/fasttemplate
+  version: dcecefd839c4193db0d35b88ec65b4c12d360ab0
+- name: golang.org/x/crypto
+  version: 034e5325b6ab92faa14d15c30e86919e911cf8e0
+  subpackages:
+  - acme
+  - acme/autocert
+- name: golang.org/x/sys
+  version: d0faeb539838e250bd0a9db4182d48d4a1915181
+  subpackages:
+  - unix
+testImports: []
