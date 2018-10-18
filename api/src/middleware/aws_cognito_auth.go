@@ -71,14 +71,15 @@ func CognitoAuthWithConfig(config CognitoAuthConfig) echo.MiddlewareFunc {
 
 	return func(next echo.HandlerFunc) echo.HandlerFunc {
 		return func(c echo.Context) error {
+			fmt.Printf("%v+ , %+v\n", c.Path(), config.Skipper);
+
 			if config.Skipper(c) {
 				return next(c)
 			}
-
 			accessToken := c.Request().Header.Get("access_token")
 
 			if accessToken == "" {
-				return failWithError(c, errors.New("the header 'access_token' is not present in the request's headers"))
+				return failWithError(c, errors.New("Please provide an access_token"))
 			}
 
 			// 1. Download and store the JSON Web Key (JWK) for your user pool.

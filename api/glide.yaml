@@ -5,3 +5,7 @@ import:
   subpackages:
   - middleware
 - package: github.com/aws/aws-sdk-go
+- package: github.com/spf13/viper
+  version: v1.2.1
+- package: github.com/fsnotify/fsnotify
+  version: v1.4.7

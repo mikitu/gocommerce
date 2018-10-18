@@ -1,10 +1,57 @@
-hash: 2b65dd00bb554b7d6ce50c413f8ddb7c5080d322b33305a18a09f39878808b25
-updated: 2018-10-05T06:39:35.367711+01:00
+hash: d2ad8179f5fc3f3a2694abf294715a3951dd2eed39f9718b44676f1d238d60e1
+updated: 2018-10-18T22:01:38.314333+01:00
 imports:
 - name: github.com/aws/aws-sdk-go
   version: c7cd1ebe87257cde9b65112fc876b0339ea0ac30
+  subpackages:
+  - aws
+  - aws/awserr
+  - aws/awsutil
+  - aws/client
+  - aws/client/metadata
+  - aws/corehandlers
+  - aws/credentials
+  - aws/credentials/ec2rolecreds
+  - aws/credentials/endpointcreds
+  - aws/credentials/stscreds
+  - aws/defaults
+  - aws/ec2metadata
+  - aws/endpoints
+  - aws/request
+  - aws/session
+  - aws/signer/v4
+  - internal/sdkio
+  - internal/sdkrand
+  - internal/shareddefaults
+  - private/protocol
+  - private/protocol/json/jsonutil
+  - private/protocol/jsonrpc
+  - private/protocol/query
+  - private/protocol/query/queryutil
+  - private/protocol/rest
+  - private/protocol/xml/xmlutil
+  - service/cognitoidentityprovider
+  - service/sts
 - name: github.com/dgrijalva/jwt-go
   version: 06ea1031745cb8b3dab3f6a236daf2b0aa468b7e
+- name: github.com/fsnotify/fsnotify
+  version: c2828203cd70a50dcccfb2761f8b1f8ceef9a8e9
+- name: github.com/go-ini/ini
+  version: bda519ae5f4cbc60d391ff8610711627a08b86ae
+- name: github.com/hashicorp/hcl
+  version: ef8a98b0bbce4a65b5aa4c368430a80ddc533168
+  subpackages:
+  - hcl/ast
+  - hcl/parser
+  - hcl/printer
+  - hcl/scanner
+  - hcl/strconv
+  - hcl/token
+  - json/parser
+  - json/scanner
+  - json/token
+- name: github.com/jmespath/go-jmespath
+  version: c2b33e8439af944379acbdd9c3a5fe0bc44bd8a5
 - name: github.com/labstack/echo
   version: 1049c9613cd371b7ea8f219404c9a821734781ed
   subpackages:
@@ -16,10 +63,28 @@ imports:
   - color
   - log
   - random
+- name: github.com/magiconair/properties
+  version: c2353362d570a7bfa228149c62842019201cfb71
 - name: github.com/mattn/go-colorable
   version: efa589957cd060542a26d2dd7832fd6a6c6c3ade
 - name: github.com/mattn/go-isatty
   version: 6ca4dbf54d38eea1a992b3c722a76a5d1c4cb25c
+- name: github.com/mitchellh/mapstructure
+  version: bb74f1db0675b241733089d5a1faa5dd8b0ef57b
+- name: github.com/pelletier/go-toml
+  version: 66540cf1fcd2c3aee6f6787dfa32a6ae9a870f12
+- name: github.com/spf13/afero
+  version: 63644898a8da0bc22138abf860edaf5277b6102e
+  subpackages:
+  - mem
+- name: github.com/spf13/cast
+  version: 8965335b8c7107321228e3e3702cab9832751bac
+- name: github.com/spf13/jwalterweatherman
+  version: 7c0cea34c8ece3fbeb2b27ab9b59511d360fb394
+- name: github.com/spf13/pflag
+  version: 583c0c0531f06d5278b7d917446061adc344b5cd
+- name: github.com/spf13/viper
+  version: 2c12c60302a5a0e62ee102ca9bc996277c2f64f5
 - name: github.com/valyala/bytebufferpool
   version: e746df99fe4a3986f4d4f79e13c1e0117ce9c2f7
 - name: github.com/valyala/fasttemplate
@@ -33,4 +98,11 @@ imports:
   version: d0faeb539838e250bd0a9db4182d48d4a1915181
   subpackages:
   - unix
+- name: golang.org/x/text
+  version: 5c1cf69b5978e5a34c5f9ba09a83e56acc4b7877
+  subpackages:
+  - transform
+  - unicode/norm
+- name: gopkg.in/yaml.v2
+  version: 5420a8b6744d3b0345ab293f6fcba19c978f1183
 testImports: []
